@@ -1,0 +1,10 @@
+name: breastcancer-predictor
+channels:
+  - defaults
+dependencies:
+  - numpy
+  - pandas
+  - scikit-learn
+  -pip:
+    - streamlit
+    - tpot
