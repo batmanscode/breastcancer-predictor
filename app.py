@@ -34,13 +34,12 @@ def load_data():
     # loaded_data = pd.read_csv("cleaned_data.csv")
     return pd.read_csv("cleaned_data.csv")
 
+data = load_data()
 
 if st.checkbox('data'):
     '''
     ## Data Used for Training
     '''
-
-    data = load_data()
 
     data
     
@@ -73,17 +72,10 @@ if st.checkbox('data'):
     st.markdown('---')
 
 
-#load model
-@st.cache(allow_output_mutation=True) #added 'allow_output_mutation=True' because kept getting 'CachedObjectMutationWarning: Return value of load_model() was mutated between runs.'
-def load_model():
-    return pickle.load(open('model.pkl', 'rb'))
-
-model = load_model()
+model = pickle.load(open('model.pkl', 'rb'))
 
 #show evaluation metrics
 if st.checkbox('model metrics'):
-
-    data = load_data()
 
     #split the same way as used to train (from cleaned_data_pipeline.py)
     features = data.drop('Classification', axis=1)
