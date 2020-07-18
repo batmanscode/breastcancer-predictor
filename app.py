@@ -37,7 +37,6 @@ This web app uses machine learning to predict whether a person has breast cancer
 #load data
 @st.cache
 def load_data():
-    # loaded_data = pd.read_csv("cleaned_data.csv")
     return pd.read_csv("cleaned_data.csv")
 
 data = load_data()
