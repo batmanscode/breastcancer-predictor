@@ -244,7 +244,7 @@ try:
     warnings.filterwarnings('ignore')
 
 except:
-    st.write('*press sumbit to compute results*')
+    st.write('*press submit to compute results*')
     # st.write("if you see this, it finally worked :O")
 
 st.markdown('---')
