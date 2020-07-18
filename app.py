@@ -15,6 +15,12 @@ from sklearn.tree import DecisionTreeClassifier
 from tpot.builtins import StackingEstimator
 from tpot.export_utils import set_param_recursive
 
+# running model pickled in google colab
+
+# running the locally generated pickle didn't work because:
+# https://stackoverflow.com/questions/21033038/scikits-learn-randomforrest-trained-on-64bit-python-wont-open-on-32bit-python
+# and
+# https://stackoverflow.com/questions/27595982/how-to-save-a-randomforest-in-scikit-learn/27596667
 
 st.title('Breast Cancer Prediction Using Machine Learning 🤖')
 
@@ -72,7 +78,11 @@ if st.checkbox('data'):
     st.markdown('---')
 
 
-model = pickle.load(open('model.pkl', 'rb'))
+@st.cache(allow_output_mutation=True) #added 'allow_output_mutation=True' because kept getting 'CachedObjectMutationWarning: Return value of load_model() was mutated between runs.'
+def load_model():
+    return pickle.load(open('model.pkl', 'rb'))
+
+model = load_model()
 
 #show evaluation metrics
 if st.checkbox('model metrics'):
