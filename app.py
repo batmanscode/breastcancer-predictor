@@ -27,9 +27,13 @@ st.title('Breast Cancer Prediction Using Machine Learning 🤖')
 '''
 This web app uses machine learning to predict whether a person has breast cancer using some of their clinical data.
 
-❗ **Not a diagnostic tool.** This is just a demo application of machine learning using a very small dataset.
+❗ **Not a diagnostic tool**  
+This is just a demo application of machine learning.
 
-*The original dataset and description can be found here: [Breast Cancer Coimbra](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Coimbra)*
+🚧 **Limitations**  
+The dataset used to train the model is small and there might be better variables that could have been used. Additionally, not knowing whether or not a patient is Diabetic might lead to bad predictions.
+
+*Huge thanks to the team who put this data together and made it open source. The original dataset and description can be found here: [Breast Cancer Coimbra](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Coimbra)*
 
 '''
 
@@ -41,7 +45,8 @@ def load_data():
 
 data = load_data()
 
-if st.checkbox('data'):
+st.write('###### *click to show/hide')
+if st.checkbox('Data'):
     '''
     ## Data Used for Training
     '''
@@ -84,7 +89,7 @@ def load_model():
 model = load_model()
 
 #show evaluation metrics
-if st.checkbox('model metrics'):
+if st.checkbox('Model Metrics'):
 
     #split the same way as used to train (from cleaned_data_pipeline.py)
     features = data.drop('Classification', axis=1)
@@ -118,15 +123,15 @@ if st.checkbox('model metrics'):
 st.title("Get a Prediction🔮")
 
 '''
-###### Note: if you're on mobile, use the arrow button on the upper left corner to open the sidebar and access input methods
+###### Note: Use this on Desktop for the best experience. If you're on mobile, use the arrow button on the upper left corner to open the sidebar and access input methods.
 '''
 
 #selectbox section starts
 ###################################################################################################
 
-input_type = st.sidebar.selectbox('input method', ['move sliders', 'enter values'], index=1)
+input_type = st.sidebar.selectbox('Input Method', ['Move Sliders', 'Enter Values'], index=1)
 
-if input_type == 'enter values': #display text input fields, show user input, submit button
+if input_type == 'Enter Values': #display text input fields, show user input, submit button
 
     #number input fields for features
 
@@ -164,7 +169,7 @@ if input_type == 'enter values': #display text input fields, show user input, su
             'Resistin ':Resistin }, index=[0]
         )
 
-if input_type == 'move sliders': #display slider input fields
+if input_type == 'Move Sliders': #display slider input fields
 
     BMI = st.sidebar.slider('BMI (kg/m2)',
                 min_value=10.0,
