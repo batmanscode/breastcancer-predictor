@@ -33,9 +33,9 @@ This is just a demo application of machine learning.
 🚧 **Limitations**  
 The dataset used to train the model is small and there might be better variables that could have been used.
 
-*The original dataset and description can be found here: [Breast Cancer Coimbra](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Coimbra)*
+*Original dataset available here: [Breast Cancer Coimbra](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Coimbra)*
 
-*For more information about the dataset please see: [Using Resistin, glucose, age and BMI to predict the presence of breast cancer](https://bmccancer.biomedcentral.com/articles/10.1186/s12885-017-3877-1)*
+*Details are described in: [Patrício, M., Pereira, J., Crisóstomo, J. et al. Using Resistin, glucose, age and BMI to predict the presence of breast cancer. BMC Cancer 18, 29 (2018)](https://doi.org/10.1186/s12885-017-3877-1)*
 
 '''
 
