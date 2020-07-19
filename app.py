@@ -27,9 +27,13 @@ st.title('Breast Cancer Prediction Using Machine Learning 🤖')
 '''
 This web app uses machine learning to predict whether a person has breast cancer using some of their clinical data.
 
-❗ **Not a diagnostic tool.** This is just a demo application of machine learning using a very small dataset.
+❗ **Not a diagnostic tool**  
+This is just a demo application of machine learning.
 
-*The original dataset and description can be found here: [Breast Cancer Coimbra](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Coimbra)*
+🚧 **Limitations**  
+The dataset used to train the model is small and there might be better variables that could have been used. Additionally, not knowing whether or not a patient is Diabetic might lead to bad predictions.
+
+*Huge thanks to the team who put this data together and made it open source. The original dataset and description can be found here: [Breast Cancer Coimbra](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Coimbra)*
 
 '''
 
@@ -41,6 +45,7 @@ def load_data():
 
 data = load_data()
 
+st.write('###### *click to show/hide')
 if st.checkbox('data'):
     '''
     ## Data Used for Training
