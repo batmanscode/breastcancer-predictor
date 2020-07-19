@@ -33,7 +33,7 @@ This is just a demo application of machine learning.
 🚧 **Limitations**  
 The dataset used to train the model is small and there might be better variables that could have been used. Additionally, not knowing whether or not a patient is Diabetic might lead to bad predictions.
 
-*Huge thanks to the team who put this data together and made it open source. The original dataset and description can be found here: [Breast Cancer Coimbra](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Coimbra)*
+*The original dataset and description can be found here: [Breast Cancer Coimbra](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Coimbra)*
 
 '''
 
