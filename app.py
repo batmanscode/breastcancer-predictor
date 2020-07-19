@@ -123,7 +123,7 @@ if st.checkbox('Model Metrics'):
 st.title("Get a Prediction🔮")
 
 '''
-###### Note: if you're on mobile, use the arrow button on the upper left corner to open the sidebar and access input methods
+###### Note: Use this on Desktop for the best experience. If you're on mobile, use the arrow button on the upper left corner to open the sidebar and access input methods.
 '''
 
 #selectbox section starts
