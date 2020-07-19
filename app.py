@@ -89,7 +89,7 @@ def load_model():
 model = load_model()
 
 #show evaluation metrics
-if st.checkbox('model metrics'):
+if st.checkbox('Model Metrics'):
 
     #split the same way as used to train (from cleaned_data_pipeline.py)
     features = data.drop('Classification', axis=1)
