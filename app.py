@@ -46,7 +46,7 @@ def load_data():
 data = load_data()
 
 st.write('###### *click to show/hide')
-if st.checkbox('data'):
+if st.checkbox('Data'):
     '''
     ## Data Used for Training
     '''
@@ -129,9 +129,9 @@ st.title("Get a Prediction🔮")
 #selectbox section starts
 ###################################################################################################
 
-input_type = st.sidebar.selectbox('input method', ['move sliders', 'enter values'], index=1)
+input_type = st.sidebar.selectbox('Input Method', ['Move Sliders', 'Enter Values'], index=1)
 
-if input_type == 'enter values': #display text input fields, show user input, submit button
+if input_type == 'Enter Values': #display text input fields, show user input, submit button
 
     #number input fields for features
 
@@ -169,7 +169,7 @@ if input_type == 'enter values': #display text input fields, show user input, su
             'Resistin ':Resistin }, index=[0]
         )
 
-if input_type == 'move sliders': #display slider input fields
+if input_type == 'Move Sliders': #display slider input fields
 
     BMI = st.sidebar.slider('BMI (kg/m2)',
                 min_value=10.0,
