@@ -31,9 +31,11 @@ This web app uses machine learning to predict whether a person has breast cancer
 This is just a demo application of machine learning.
 
 🚧 **Limitations**  
-The dataset used to train the model is small and there might be better variables that could have been used. Additionally, not knowing whether or not a patient is Diabetic might lead to bad predictions.
+The dataset used to train the model is small and there might be better variables that could have been used.
 
 *The original dataset and description can be found here: [Breast Cancer Coimbra](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Coimbra)*
+
+*For more information about the dataset please see: [Using Resistin, glucose, age and BMI to predict the presence of breast cancer](https://bmccancer.biomedcentral.com/articles/10.1186/s12885-017-3877-1)*
 
 '''
 
