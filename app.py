@@ -22,7 +22,7 @@ from tpot.export_utils import set_param_recursive
 # and
 # https://stackoverflow.com/questions/27595982/how-to-save-a-randomforest-in-scikit-learn/27596667
 
-st.title('Breast Cancer Prediction Using Machine Learning 🤖')
+st.title('Breast Cancer Prediction Using Artificial Intelligence 🤖')
 
 '''
 This web app uses machine learning to predict whether a person has breast cancer using some of their clinical data.
