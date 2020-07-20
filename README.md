@@ -1,4 +1,4 @@
-# Breast Cancer Prediction Using Machine Learning 🤖
+# Breast Cancer Prediction Using Artificial Intelligence 🤖
 Live at: https://breastcancer-predictor.herokuapp.com/
 
 This web app uses machine learning to predict whether a person has breast cancer using some of their clinical data.
