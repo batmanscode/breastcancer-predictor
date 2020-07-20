@@ -13,6 +13,7 @@ features = tpot_data.drop('Classification', axis=1)
 training_features, testing_features, training_target, testing_target = \
             train_test_split(features, tpot_data['Classification'], random_state=42, test_size=0.2)
 
+# Average CV (default=5) score on the training set was: 0.8188888888888888
 exported_pipeline = make_pipeline(
     FastICA(tol=0.05),
     StackingEstimator(estimator=GradientBoostingClassifier(learning_rate=0.1, max_depth=7, max_features=0.3, min_samples_leaf=14, min_samples_split=16, n_estimators=100, subsample=0.25)),
