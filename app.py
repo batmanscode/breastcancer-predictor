@@ -119,8 +119,8 @@ if st.checkbox('Model Metrics'):
     st.write(f"False Negative rate: {fnr:.2f}%")
     st.write(f"True Positive rate: {tpr:.2f}%")
 
-    st.markdown('---')
-
+    
+st.markdown('---')
 
 st.title("Get a Prediction🔮")
 
