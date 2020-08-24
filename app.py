@@ -22,6 +22,10 @@ from tpot.export_utils import set_param_recursive
 # and
 # https://stackoverflow.com/questions/27595982/how-to-save-a-randomforest-in-scikit-learn/27596667
 
+# https://docs.streamlit.io/en/latest/api.html#streamlit.beta_set_page_config
+# https://discuss.streamlit.io/t/version-0-65-0/4880
+st.beta_set_page_config(page_title="Breast Cancer Predictor", page_icon="🔬", layout='centered', initial_sidebar_state='auto')
+
 st.title('Breast Cancer Prediction Using Artificial Intelligence 🤖')
 
 '''
