@@ -180,7 +180,7 @@ if input_type == 'Move Sliders': #display slider input fields
     BMI = st.sidebar.slider('BMI (kg/m2)',
                 min_value=10.0,
                 max_value=50.0,
-                value=data['BMI'][0],
+                value=float(data['BMI'][0]),
                 step=0.01)
 
     Glucose = st.sidebar.slider('Glucose (mg/dL)',
@@ -196,20 +196,22 @@ if input_type == 'Move Sliders': #display slider input fields
     Insulin = st.sidebar.slider('Insulin (µU/mL)',
                         min_value=1.0,
                         max_value=75.0,
-                        value=data['Insulin'][0],
+                        value=float(data['Insulin'][0]),
                         step=0.01)
     
     HOMA = st.sidebar.slider('HOMA',
                         min_value=0.25,
                         max_value=30.0,
-                        value=data['HOMA'][0],
+                        value=float(data['HOMA'][0]),
                         step=0.01)
 
     Resistin = st.sidebar.slider('Resistin (ng/mL)',
                         min_value=1.0,
                         max_value=100.0,
-                        value=data['Resistin'][0],
+                        value=float(data['Resistin'][0]),
                         step=0.01)
+    # got KeyError: <class ‘numpy.float64’> and had to add float()
+    # https://discuss.streamlit.io/t/keyerror-class-numpy-float64/5147
     
     #slider values to dataframe
     dataframe = pd.DataFrame(
