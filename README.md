@@ -32,4 +32,4 @@ This will create a local web server which should open in your default browser. I
 ## Possible Issues
 If your cloned version gives you an error, please generate a new `model.pkl` by running `pipeline.py` and try again. This will overwrite the existing `model.pkl`.
 
-I ran into ```ValueError: Buffer dtype mismatch, expected 'SIZE_t' but got 'int'``` when trying to deploy on Heroku despite it working in my local env. Turns out you can't pickle on one architecture and unpickle on a different one (my local env was 32-bit). Thanks to [this answer](https://stackoverflow.com/questions/27595982/how-to-save-a-randomforest-in-scikit-learn/27596667) for helping me understand what the issue was.
+I ran into ```ValueError: Buffer dtype mismatch, expected 'SIZE_t' but got 'int'``` when trying to deploy on Heroku despite it working in my local env. Turns out you can't pickle on one architecture and unpickle on a different one (32/64-bit). Thanks to [this answer](https://stackoverflow.com/questions/27595982/how-to-save-a-randomforest-in-scikit-learn/27596667) for helping me understand what the issue was.
