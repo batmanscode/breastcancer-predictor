@@ -17,6 +17,9 @@ Dataset used: [Breast Cancer Coimbra](https://archive.ics.uci.edu/ml/datasets/Br
 
 Details described in: [Patrício, M., Pereira, J., Crisóstomo, J. et al. Using Resistin, glucose, age and BMI to predict the presence of breast cancer. BMC Cancer 18, 29 (2018)](https://doi.org/10.1186/s12885-017-3877-1)
 
+### Demo
+![demo](https://j.gifs.com/K1Dm5G.gif)
+
 ## How to Run Locally
 Clone this repository, create a new environment, and enter the following in your terminal:
 ```shell
