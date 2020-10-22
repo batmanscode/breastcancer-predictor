@@ -1,4 +1,7 @@
 # Breast Cancer Prediction Using Artificial Intelligence 🤖
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/batmanscode/breastcancer-predictor/app.py)
+
 Live at: https://breastcancer-predictor.herokuapp.com/
 
 This web app uses machine learning to predict whether a person has breast cancer using some of their clinical data.
