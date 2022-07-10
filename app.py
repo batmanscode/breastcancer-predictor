@@ -2,7 +2,6 @@ import base64
 import pickle
 import warnings
 
-import numpy as np
 import pandas as pd
 import streamlit as st
 from sklearn.decomposition import FastICA
