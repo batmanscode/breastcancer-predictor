@@ -1,4 +1,4 @@
 streamlit==0.65.2
 pandas==1.0.5
 scikit-learn==1.1.1
-tpot==0.11.5
+tpot==0.11.7
