@@ -2,7 +2,14 @@
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/batmanscode/breastcancer-predictor/app.py)
 
-Live at: https://breastcancer-predictor.herokuapp.com/
+~Live at: https://breastcancer-predictor.herokuapp.com/~ (heroku couldn't install `numpy`)
+
+```
+             × Encountered error while trying to install package.
+             ╰─> numpy
+ ```
+
+Live at: https://batmanscode-breastcancer-predictor-app-b7zlot.streamlitapp.com/
 
 This web app uses machine learning to predict whether a person has breast cancer using some of their clinical data.
 
@@ -32,7 +39,6 @@ This will create a local web server which should open in your default browser. I
 
 ## Additional Info
 * Web app built with [Streamlit](https://github.com/streamlit/streamlit) (which is an amazing tool, if you haven't heard of it already).
-* If you're using conda, you can use `environment.yml` to create a new environment.
 * `pipeline.py` is the code used to generate `model.pkl`. [TPOT](https://github.com/EpistasisLab/tpot) was used to create this pipeline.
 
 ## Possible Issues
