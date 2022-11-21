@@ -9,7 +9,7 @@
              ╰─> numpy
  ```
 
-Live at: https://batmanscode-breastcancer-predictor-app-b7zlot.streamlitapp.com/
+Live at: https://breastcancer-predictor.streamlit.app
 
 This web app uses machine learning to predict whether a person has breast cancer using some of their clinical data.
 
