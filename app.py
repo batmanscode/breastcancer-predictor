@@ -87,7 +87,7 @@ if st.checkbox('Data'):
     st.markdown('---')
 
 
-@st.cache_data(allow_output_mutation=True) #added 'allow_output_mutation=True' because kept getting 'CachedObjectMutationWarning: Return value of load_model() was mutated between runs.'
+@st.cache_resource
 def load_model():
     return pickle.load(open('model.pkl', 'rb'))
 
