@@ -23,7 +23,7 @@ from tpot.export_utils import set_param_recursive
 
 # https://docs.streamlit.io/en/latest/api.html#streamlit.beta_set_page_config
 # https://discuss.streamlit.io/t/version-0-65-0/4880
-st.beta_set_page_config(page_title="Breast Cancer Predictor", page_icon="🔬", layout='centered', initial_sidebar_state='auto')
+st.set_page_config(page_title="Breast Cancer Predictor", page_icon="🔬", layout='centered', initial_sidebar_state='auto')
 
 st.title('Breast Cancer Prediction Using Artificial Intelligence 🤖')
 
@@ -44,7 +44,7 @@ The dataset used to train the model is small and there might be better variables
 
 
 #load data
-@st.cache
+@st.cache_data
 def load_data():
     return pd.read_csv("cleaned_data.csv")
 
@@ -87,7 +87,7 @@ if st.checkbox('Data'):
     st.markdown('---')
 
 
-@st.cache(allow_output_mutation=True) #added 'allow_output_mutation=True' because kept getting 'CachedObjectMutationWarning: Return value of load_model() was mutated between runs.'
+@st.cache_data(allow_output_mutation=True) #added 'allow_output_mutation=True' because kept getting 'CachedObjectMutationWarning: Return value of load_model() was mutated between runs.'
 def load_model():
     return pickle.load(open('model.pkl', 'rb'))
 
